@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pokemon Detail</title>
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+
+    <!-- Nosso CSS -->
+    <link rel="stylesheet" href="/pokeClone/js-developer-pokedex/assets/css/global.css">
+    <link rel="stylesheet" href="/pokeClone/js-developer-pokedex/assets/css/pokedex.css">
+
+</head>
+
+<body>
+    <section id="cardMain" class="cardMain">
+
+        <article id="image" class="cardImage">
+            <img src="${pokemon.photo}" alt="${pokemon.name}">
+        </article>
+
+        <article id="details">
+            <div class="cardDetails">
+                <h3>About</h3>
+                <div class="cardDetail">
+                    <div class="labels">
+                        <p>Species:</p>
+                        <p>Height:</p>
+                        <p>Weight:</p>
+                        <p>Abilites:</p>
+                    </div>
+                    <div class="data">
+                        <p>Seed</p>
+                        <p>2'3.6"(0.70cm)<p>
+                        <p>15.2 lbs (6.9Kg)</p>
+                        <p>Overgrow, Chrlorophyl</p>
+                    </div>
+                </div>
+                <h3>Breeding</h3>
+                <div class="cardDetail">
+                    <div class="labels">
+                        <p>Gender:</p>
+                        <p>Egg Groups:</p>
+                        <p>Egg Cycle:</p>
+                    </div>
+                    <div class="data">
+                        <p>87,5% 12,5%</p>
+                        <p>Monster</p>
+                        <p>Grass</p>
+                    </div>
+                </div>
+            </div>
+            
+        </article>
+        <button id="btnBack" class="btnBack" onclick="esconder()">Back</button>
+    </section>
+    <a href="javascript: exibir();">Exibir</a>
+    <a onclick="exibir()"> Click </a>
+    <button id="btnExibir" onclick="exibir()">Exibir</button>
+
+    <!-- scripts -->
+    <script src="./assets/js/pokemon-model.js"></script>
+    <script src="./assets/js/poke-api.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
